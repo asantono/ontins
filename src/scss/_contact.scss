@@ -1,0 +1,70 @@
+@import "./variables";
+
+.contact {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-grey-light;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+
+  &__form {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    text-align: center;
+    padding-top: 2rem;
+
+    &--wrapper {
+      width: 100%;
+    }
+
+    &--button {
+      display: block;
+      height: 4rem;
+      width: 18rem;
+      border: none;
+      background-color: $color-orange;
+      color: $color-grey-light;
+      border-radius: 10rem;
+      font-size: 2rem;
+      font-weight: 800;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &--success {
+      font-size: 3rem;
+      font-weight: 800;
+      color: $color-orange;
+      text-align: center;
+      width: 100%;
+    }
+
+    &--group {
+      height: 8rem;
+    }
+
+    &--label {
+      display: inline-flex;
+      width: 9rem;
+      margin-right: 2rem;
+      font-size: 2rem;
+    }
+    &--input {
+      border: none;
+      border-bottom: 2px solid $color-black;
+      border-top: 2x solid $color-transparent;
+      width: 30rem;
+      outline: none;
+      background-color: $color-grey-light;
+      font-size: 2rem;
+      transition: all 0.3s;
+
+      &:focus {
+        border-bottom: 2px solid $color-orange;
+      }
+    }
+  }
+}

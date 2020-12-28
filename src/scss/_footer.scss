@@ -1,0 +1,28 @@
+@import "./variables";
+
+.footer {
+  display: flex;
+  width: 100vw;
+  background-color: $color-blue-dark;
+  //   overflow: hidden;
+
+  &__left {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-grey-light;
+    font-size: 1.6rem;
+    &--copyright {
+      margin: 2rem 0 2rem 2rem;
+    }
+    &--site {
+      margin: 0 0 2rem 2rem;
+    }
+  }
+
+  &__right {
+  }
+}

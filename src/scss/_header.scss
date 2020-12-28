@@ -1,0 +1,72 @@
+@import "./variables";
+
+.header {
+  display: flex;
+  width: 100vw;
+  background-color: $color-blue-dark;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+
+    &--logo {
+      font-size: 4rem;
+      font-family: "Oswald", sans-serif;
+      font-weight: 800;
+      color: $color-grey-light;
+
+      &--blue {
+        color: $color-blue-light;
+      }
+
+      &--in {
+        color: $color-blue-light;
+        font-size: 2.6rem;
+        font-family: "Oswald", sans-serif;
+        font-weight: 800;
+        margin-top: -1.6rem;
+        margin-left: 6rem;
+      }
+    }
+  }
+
+  &__right {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    &--phone {
+      display: flex;
+      margin-right: 3rem;
+      padding-bottom: 1rem;
+      &--icon {
+        color: $color-orange;
+        font-size: 2.2rem;
+        margin-right: 2rem;
+      }
+
+      &--number {
+        color: $color-grey-light;
+        text-decoration: none;
+        border: none;
+      }
+    }
+
+    &--email {
+      display: flex;
+      &--address {
+        color: $color-grey-light;
+        text-decoration: none;
+        border: none;
+      }
+      &--icon {
+        color: $color-orange;
+        font-size: 2.2rem;
+        margin-right: 2rem;
+      }
+    }
+  }
+}

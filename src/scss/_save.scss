@@ -1,0 +1,48 @@
+@import "./variables";
+
+.save {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: $color-grey-light;
+  &__title {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  &__subtext {
+    font-size: 1.4rem;
+    text-align: center;
+    width: 100%;
+
+    &--link {
+      font-size: 1.6rem;
+      padding-top: 2rem;
+      font-weight: 800;
+      text-align: center;
+      width: 100%;
+      color: $color-orange;
+
+      &:hover {
+        color: $color-blue-light;
+        cursor: pointer;
+      }
+    }
+  }
+  &__grid {
+    width: 100vw;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+    text-align: center;
+    &--item {
+      font-size: 2.5rem;
+      padding: 0.6rem 0;
+    }
+  }
+}
