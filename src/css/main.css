@@ -32,6 +32,10 @@ input[type="number"]::-webkit-outer-spin-button {
   html {
     font-size: 45%; } }
 
+@media (max-width: 412px) {
+  html {
+    font-size: 40%; } }
+
 body {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif; }
@@ -94,6 +98,7 @@ body {
   width: 100vw;
   align-items: center;
   justify-content: center;
+  padding: 4rem 2rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
   background-color: #f7f7f7; }
@@ -115,7 +120,6 @@ body {
         color: #9daaf2;
         cursor: pointer; }
   .save__grid {
-    width: 100vw;
     padding-top: 2rem;
     padding-left: 4rem;
     padding-right: 4rem;
@@ -190,6 +194,9 @@ body {
     padding-top: 2rem; }
     .contact__form--wrapper {
       width: 100%; }
+      @media (max-width: 596px) {
+        .contact__form--wrapper {
+          width: auto; } }
     .contact__form--button {
       display: block;
       height: 4rem;
@@ -201,7 +208,8 @@ body {
       font-size: 2rem;
       font-weight: 800;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      -webkit-appearance: none; }
     .contact__form--success {
       font-size: 3rem;
       font-weight: 800;
