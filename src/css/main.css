@@ -6,9 +6,6 @@
   box-sizing: inherit;
   overflow-x: hidden; }
 
-html {
-  font-size: 62.5%; }
-
 a,
 a:visited {
   text-decoration: none !important; }
@@ -20,21 +17,20 @@ input[type="number"]::-webkit-outer-spin-button {
   appearance: none;
   margin: 0; }
 
-@media (max-width: 992px) {
-  html {
-    font-size: 58%; } }
-
-@media (max-width: 768px) {
-  html {
-    font-size: 50%; } }
-
-@media (max-width: 596px) {
-  html {
-    font-size: 45%; } }
-
-@media (max-width: 412px) {
-  html {
-    font-size: 40%; } }
+html {
+  font-size: 62.5%; }
+  @media (max-width: 992px) {
+    html {
+      font-size: 55%; } }
+  @media (max-width: 768px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 596px) {
+    html {
+      font-size: 45%; } }
+  @media (max-width: 450px) {
+    html {
+      font-size: 40%; } }
 
 body {
   box-sizing: border-box;
@@ -127,8 +123,8 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
     text-align: center; }
-    @media (max-width: 412px) {
-      .save__grid html {
+    @media (max-width: 596px) {
+      .save__grid {
         width: auto; } }
     .save__grid--item {
       font-size: 2.5rem;
