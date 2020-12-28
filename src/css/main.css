@@ -149,6 +149,10 @@ body {
     height: 29rem;
     background-color: #1a2238;
     box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.2); }
+    @media (max-width: 596px) {
+      .services__container {
+        width: 43rem;
+        height: 23rem; } }
   .services__left {
     display: flex;
     flex-direction: column;
@@ -177,6 +181,10 @@ body {
       width: 25rem;
       border-radius: 100rem;
       object-fit: cover; }
+      @media (max-width: 596px) {
+        .services__right--circle {
+          width: 20rem;
+          height: 20rem; } }
 
 .contact {
   display: flex;

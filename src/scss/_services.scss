@@ -21,6 +21,11 @@
     height: 29rem;
     background-color: $color-blue-dark;
     box-shadow: 0 0.6rem 1rem rgba($color-black, 0.2);
+
+    @include sm {
+      width: 43rem;
+      height: 23rem;
+    }
   }
 
   &__left {
@@ -64,6 +69,11 @@
       width: 25rem;
       border-radius: 100rem;
       object-fit: cover;
+
+      @include sm {
+        width: 20rem;
+        height: 20rem;
+      }
     }
   }
 }
