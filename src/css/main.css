@@ -120,12 +120,16 @@ body {
         color: #9daaf2;
         cursor: pointer; }
   .save__grid {
+    width: 100%;
     padding-top: 2rem;
     padding-left: 4rem;
     padding-right: 4rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
     text-align: center; }
+    @media (max-width: 412px) {
+      .save__grid html {
+        width: auto; } }
     .save__grid--item {
       font-size: 2.5rem;
       padding: 0.6rem 0; }
