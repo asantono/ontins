@@ -8,6 +8,10 @@
   align-items: center;
   padding: 3rem;
 
+  @include sm {
+    padding: 3rem 1.5rem;
+  }
+
   &__left {
     display: flex;
     flex-direction: column;

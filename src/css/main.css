@@ -34,6 +34,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 3rem; }
+  @media (max-width: 596px) {
+    .header {
+      padding: 3rem 1.5rem; } }
   .header__left {
     display: flex;
     flex-direction: column; }
