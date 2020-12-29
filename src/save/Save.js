@@ -7,7 +7,7 @@ const Save = () => {
 
   return (
     <div className="save">
-      <div className="save__title">Save With Ontins Best Rates!</div>
+      <div className="save__title">Save With Ontins</div>
       <div className="save__subtext">
         Ontins works to get you the best rates in SW Ontario with Bundles,
         Discounts, and More
