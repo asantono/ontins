@@ -24,18 +24,18 @@ input[type="number"]::-webkit-outer-spin-button {
 html {
   font-size: 62.5%;
 
-  @include lg {
+  // @include lg {
+  //   font-size: 55%;
+  // }
+  // @include md {
+  //   font-size: 50%;
+  // }
+  @include sm {
     font-size: 55%;
   }
-  @include md {
-    font-size: 50%;
-  }
-  @include sm {
-    font-size: 45%;
-  }
-  @include tn {
-    font-size: 40%;
-  }
+  // @include tn {
+  //   font-size: 40%;
+  // }
 }
 
 body {
