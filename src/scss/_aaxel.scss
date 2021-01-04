@@ -1,0 +1,20 @@
+@import "./variables";
+
+.aaxel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  &__logo {
+    display: flex;
+    align-self: flex-end;
+    width: 6rem;
+    background-color: white;
+  }
+  &__addline {
+    color: $color-grey-light;
+  }
+  &__addline--name {
+    font-weight: 800;
+  }
+}

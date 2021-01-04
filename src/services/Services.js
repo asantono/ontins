@@ -1,11 +1,11 @@
-import React from "react";
+import React, { Fragment } from "react";
 import parmjit from "../img/parmjit.jpg";
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 
 const Services = () => {
   return (
     <div className="services">
-      <div className="services__title">Services</div>
+      <div className="services__title">Meet Your Broker</div>
       <div className="services__container">
         <div className="services__left">
           <div className="services__left--name">

@@ -5,7 +5,7 @@
   width: 100vw;
   flex-direction: column;
   align-items: center;
-  background-color: $color-grey-light;
+  background-color: $color-white;
   padding-top: 3rem;
   padding-bottom: 4rem;
 
@@ -37,6 +37,11 @@
       margin-left: auto;
       margin-right: auto;
       -webkit-appearance: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-blue-light;
+      }
     }
 
     &--success {

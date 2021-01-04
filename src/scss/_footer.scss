@@ -2,9 +2,39 @@
 
 .footer {
   display: flex;
+  flex-direction: column;
   width: 100vw;
   background-color: $color-blue-dark;
   //   overflow: hidden;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    height: 24rem;
+
+    @include sm {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  &__phone {
+    display: flex;
+    font-size: 1.8rem;
+    color: $color-grey-light;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $color-blue-light;
+    }
+
+    &--left {
+      width: 6rem;
+    }
+  }
 
   &__left {
     display: flex;
@@ -21,8 +51,5 @@
     &--site {
       margin: 0 0 2rem 2rem;
     }
-  }
-
-  &__right {
   }
 }

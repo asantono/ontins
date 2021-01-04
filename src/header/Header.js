@@ -1,17 +1,12 @@
 import React from "react";
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
+import Logo from "./Logo";
 
 const Header = () => {
   return (
     <div className="header">
       <div className="header__left">
-        <div className="header__left--logo">
-          Ont
-          <span className="header__left--logo header__left--logo--blue">
-            ins
-          </span>
-        </div>
-        <div className="header__left--logo--in">insurance</div>
+        <Logo />
       </div>
       <div className="header__right">
         <div className="header__right--section">

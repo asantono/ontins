@@ -54,6 +54,16 @@ body {
         font-weight: 800;
         margin-top: -1.6rem;
         margin-left: 6rem; }
+      .header__left--logo--services {
+        color: #f7f7f7;
+        font-size: 2.6rem;
+        font-family: "Oswald", sans-serif;
+        font-weight: 800;
+        margin-top: -1.3rem;
+        margin-left: 1.7rem; }
+        .header__left--logo--services--blue {
+          color: #9daaf2;
+          margin-left: 0; }
   .header__right {
     width: max-content;
     display: flex;
@@ -198,7 +208,7 @@ body {
   width: 100vw;
   flex-direction: column;
   align-items: center;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   padding-top: 3rem;
   padding-bottom: 4rem; }
   .contact__form {
@@ -224,7 +234,10 @@ body {
       font-weight: 800;
       margin-left: auto;
       margin-right: auto;
-      -webkit-appearance: none; }
+      -webkit-appearance: none;
+      cursor: pointer; }
+      .contact__form--button:hover {
+        background-color: #9daaf2; }
     .contact__form--success {
       font-size: 3rem;
       font-weight: 800;
@@ -252,8 +265,29 @@ body {
 
 .footer {
   display: flex;
+  flex-direction: column;
   width: 100vw;
   background-color: #1a2238; }
+  .footer__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    height: 24rem; }
+    @media (max-width: 596px) {
+      .footer__top {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem; } }
+  .footer__phone {
+    display: flex;
+    font-size: 1.8rem;
+    color: #f7f7f7;
+    transition: all 0.3s; }
+    .footer__phone:hover {
+      color: #9daaf2; }
+    .footer__phone--left {
+      width: 6rem; }
   .footer__left {
     display: flex;
     height: 100%;
@@ -267,3 +301,18 @@ body {
       margin: 2rem 0 2rem 2rem; }
     .footer__left--site {
       margin: 0 0 2rem 2rem; }
+
+.aaxel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right; }
+  .aaxel__logo {
+    display: flex;
+    align-self: flex-end;
+    width: 6rem;
+    background-color: white; }
+  .aaxel__addline {
+    color: #f7f7f7; }
+  .aaxel__addline--name {
+    font-weight: 800; }

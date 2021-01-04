@@ -34,6 +34,19 @@
         margin-top: -1.6rem;
         margin-left: 6rem;
       }
+      &--services {
+        color: $color-grey-light;
+        font-size: 2.6rem;
+        font-family: "Oswald", sans-serif;
+        font-weight: 800;
+        margin-top: -1.3rem;
+        margin-left: 1.7rem;
+
+        &--blue {
+          color: $color-blue-light;
+          margin-left: 0;
+        }
+      }
     }
   }
 
