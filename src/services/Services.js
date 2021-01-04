@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import parmjit from "../img/parmjit.jpg";
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 

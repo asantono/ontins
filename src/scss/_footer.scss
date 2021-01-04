@@ -7,6 +7,12 @@
   background-color: $color-blue-dark;
   //   overflow: hidden;
 
+  &__width {
+    @include sm {
+      width: 26rem;
+    }
+  }
+
   &__top {
     display: flex;
     align-items: center;

@@ -1,4 +1,3 @@
-import { useRef, createRef } from "react";
 import Contact from "./contact/Contact";
 import "./css/main.css";
 import Footer from "./footer/Footer";

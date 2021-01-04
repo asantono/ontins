@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer__top">
-        <div className="header__left">
+        <div className="header__left footer__width">
           <Logo />
           <a className="footer__phone" href="tel:905-529-6666">
             <span className="footer__phone--left">direct:</span> 905-529-6666

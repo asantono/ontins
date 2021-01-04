@@ -1,9 +1,9 @@
 import React from "react";
 
 const ServiceList = () => {
-  const goToForm = () => {
-    document.getElementById("name").focus();
-  };
+  // const goToForm = () => {
+  //   document.getElementById("name").focus();
+  // };
 
   return (
     <div className="save save--white">
