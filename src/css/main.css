@@ -145,9 +145,8 @@ body {
     font-size: 3rem;
     font-weight: 800;
     padding-bottom: 3rem; }
-  @media (max-width: 596px) {
-    .services__neg-margin--bottom {
-      padding-bottom: 0; } }
+  .services__neg-margin--bottom {
+    padding-bottom: 0; }
   @media (max-width: 596px) {
     .services__neg-margin--right {
       margin-right: 1rem; } }
@@ -156,13 +155,13 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 52rem;
-    height: 29rem;
+    height: 32rem;
     background-color: #1a2238;
     box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.2); }
     @media (max-width: 596px) {
       .services__container {
         width: 42.2rem;
-        height: 25rem; } }
+        height: 27rem; } }
   .services__left {
     display: flex;
     flex-direction: column;
@@ -222,6 +221,11 @@ body {
       @media (max-width: 596px) {
         .contact__form--wrapper {
           width: auto; } }
+    .contact__form--loader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 4rem; }
     .contact__form--button {
       display: block;
       height: 4rem;
@@ -238,6 +242,8 @@ body {
       cursor: pointer; }
       .contact__form--button:hover {
         background-color: #9daaf2; }
+      .contact__form--button:disabled {
+        background-color: #696969; }
     .contact__form--success {
       font-size: 3rem;
       font-weight: 800;

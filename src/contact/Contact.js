@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import API from "../util/API";
 import emailjs from "emailjs-com";
+import ClipLoader from "react-spinners/ClipLoader";
 
 const Contact = () => {
   const [success, setSuccess] = useState();
-  // "Success! You will be contacted with your quote shortly."
+  const [loading, setLoading] = useState(false);
 
   const [data, setData] = useState({
     name: "",
@@ -21,40 +21,43 @@ const Contact = () => {
     }));
   };
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
+    setLoading(true);
+    const createEmail = {
+      from_name: data.name,
+      to_name: "Parmjit Brar",
+      message: data.subject,
+      phone: data.phone,
+      reply_to: data.email,
+    };
+    let email;
 
-    emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
+    try {
+      email = await emailjs.send(
+        "service_ez47rf9",
+        "template_nuehxq4",
+        createEmail,
+        "user_GRVphBnEZ7g8k4CzwiARd"
       );
+
+      setLoading(false);
+    } catch (err) {
+      console.log(err);
+      setLoading(false);
+    }
+
+    if (email)
+      setSuccess("Success! You will be contacted with your quote shortly.");
+    else console.log("Error");
   };
 
-  const submitForm = async (e) => {
-    e.preventDefault();
-    console.log(data);
-    // const url = "/sendmail";
-    // const body = data;
-    // const options = { headers: { "Content-Type": "application/json" } };
-    // try {
-    //   let res = await API.post(url, body, options);
-    //   console.log(res);
-    // } catch (err) {
-    //   console.log(err.message);
-    // }
-  };
   return (
     <div className="contact">
       <div className="services__title">Get a Quote Today</div>
 
       <div className="contact__form--success">{success}</div>
-      <form className="contact__form--wrapper" onSubmit={(e) => submitForm(e)}>
+      <form className="contact__form--wrapper" onSubmit={sendEmail}>
         <div className="contact__form">
           <div className="contact__form--group">
             <label className="contact__form--label" htmlFor="name">
@@ -118,7 +121,17 @@ const Contact = () => {
           </div>
         </div>
 
-        <input className="contact__form--button" type="submit" />
+        {loading ? (
+          <div className="contact__form--loader">
+            <ClipLoader color="blue" loading={loading} size={25} />
+          </div>
+        ) : (
+          <input
+            className="contact__form--button"
+            type="submit"
+            disabled={success}
+          />
+        )}
       </form>
     </div>
   );

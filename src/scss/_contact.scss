@@ -24,6 +24,13 @@
       }
     }
 
+    &--loader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 4rem;
+    }
+
     &--button {
       display: block;
       height: 4rem;
@@ -41,6 +48,10 @@
 
       &:hover {
         background-color: $color-blue-light;
+      }
+
+      &:disabled {
+        background-color: $color-grey-dark;
       }
     }
 

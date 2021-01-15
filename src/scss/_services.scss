@@ -14,9 +14,7 @@
   }
 
   &__neg-margin--bottom {
-    @include sm {
-      padding-bottom: 0;
-    }
+    padding-bottom: 0;
   }
 
   &__neg-margin--right {
@@ -30,13 +28,13 @@
     justify-content: space-around;
     align-items: center;
     width: 52rem;
-    height: 29rem;
+    height: 32rem;
     background-color: $color-blue-dark;
     box-shadow: 0 0.6rem 1rem rgba($color-black, 0.2);
 
     @include sm {
       width: 42.2rem;
-      height: 25rem;
+      height: 27rem;
     }
   }
 

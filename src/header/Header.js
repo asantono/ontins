@@ -19,6 +19,15 @@ const Header = () => {
         </div>
 
         <div className="header__right--section">
+          <a className="header__right--phone" href="tel:905-529-6666">
+            <div className="header__right--phone--icon">
+              <AiOutlinePhone />
+            </div>
+            <div className="header__right--phone--number">905-529-6666</div>
+          </a>
+        </div>
+
+        <div className="header__right--section">
           <a
             className="header__right--email"
             href="mailto:paulbrar69@ontins.com?cc=paulbrar69@gmail.com"
@@ -27,7 +36,7 @@ const Header = () => {
               <AiOutlineMail />
             </div>
             <div className="header__right--email--address">
-              PaulBrar@ontins.com
+              paulBrar@ontins.com
             </div>
           </a>
         </div>
