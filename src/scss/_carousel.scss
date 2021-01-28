@@ -72,6 +72,7 @@
       color: $color-grey-light;
       background-color: $color-orange;
       border: 2px solid $color-grey-light;
+      -webkit-appearance: none;
     }
   }
   &__image {

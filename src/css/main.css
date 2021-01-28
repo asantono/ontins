@@ -394,7 +394,8 @@ body {
       font-size: 2rem;
       color: #f7f7f7;
       background-color: #ff6a3d;
-      border: 2px solid #f7f7f7; }
+      border: 2px solid #f7f7f7;
+      -webkit-appearance: none; }
   .carousel__image {
     z-index: -1; }
     .carousel__image--overlay {
