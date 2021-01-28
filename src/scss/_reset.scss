@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  overflow-x: hidden;
+  // overflow: hidden;
 }
 
 a,
@@ -41,4 +41,11 @@ html {
 body {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: calc(100vh - 31rem);
 }

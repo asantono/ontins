@@ -67,6 +67,10 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
     font-size: 1.6rem;
+
+    &--item {
+      overflow-x: hidden;
+    }
   }
 
   &__contact {

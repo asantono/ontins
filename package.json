@@ -1,6 +1,7 @@
 {
-  "name": "client",
+  "name": "ontins",
   "version": "0.1.0",
+  "homepage": "https://ontins.com",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -12,6 +13,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",
+    "react-responsive-carousel": "^3.2.11",
     "react-scripts": "4.0.1",
     "react-spinners": "^0.10.4",
     "watch": "^1.0.2",
