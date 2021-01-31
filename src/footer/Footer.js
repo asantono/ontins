@@ -15,7 +15,7 @@ const Footer = () => {
             <span className="footer__phone--left">cell:</span> 519-601-6666
           </a>
         </div>
-        <div className="header__right">
+        <div className="footer__right">
           <Aaxel />
         </div>
       </div>

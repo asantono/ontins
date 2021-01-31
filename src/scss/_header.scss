@@ -51,10 +51,19 @@
   }
 
   &__right {
-    width: max-content;
+    width: 70%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    // flex-direction: column;
     font-size: 1.8rem;
+
+    @include lg {
+      width: max-content;
+      display: flex;
+      flex-direction: column;
+      font-size: 1.8rem;
+    }
+
     &--phone {
       display: flex;
       margin-right: 3rem;

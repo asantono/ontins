@@ -7,6 +7,7 @@ import Relationship from "./relationship/Relationship";
 import Save from "./save/Save";
 import ServiceList from "./services/ServiceList";
 import Services from "./services/Services";
+import Testimonial from "./testimonial/Testimonial";
 
 function App() {
   return (
@@ -14,10 +15,10 @@ function App() {
       <Header />
       <CarouselOne />
       <Relationship />
-      {/* <RelationshipCard /> */}
       <Save />
       <Services />
       <ServiceList />
+      <Testimonial />
       <Contact />
       <Footer />
     </div>
