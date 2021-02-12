@@ -3,10 +3,21 @@ import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 import Logo from "./Logo";
 
 const Header = () => {
+  const goToForm = () => {
+    document.getElementById("name").focus();
+  };
   return (
     <div className="header">
       <div className="header__left">
         <Logo />
+      </div>
+      <div className="header__center">
+        <input
+          className="carousel__right--button"
+          type="submit"
+          value="Get a Quote"
+          onClick={() => goToForm()}
+        />
       </div>
       <div className="header__right">
         <div className="header__right--section">

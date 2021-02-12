@@ -22,7 +22,7 @@ const Footer = () => {
       <div className="footer__bottom">
         <div className="footer__left">
           <div className="footer__left--copyright">
-            Copyright &#169; 2020, Ontins. All right reserved
+            Copyright &#169; 2021, Ontins. All right reserved
           </div>
           <div className="footer__left--site">Site by: Anthony Santonocito</div>
         </div>

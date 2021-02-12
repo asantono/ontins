@@ -69,17 +69,16 @@ body {
         .header__left--logo--services--blue {
           color: #9daaf2;
           margin-left: 0; }
+  @media (max-width: 768px) {
+    .header__center {
+      visibility: hidden;
+      width: 0;
+      height: 0; } }
   .header__right {
-    width: 70%;
+    width: max-content;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     font-size: 1.8rem; }
-    @media (max-width: 992px) {
-      .header__right {
-        width: max-content;
-        display: flex;
-        flex-direction: column;
-        font-size: 1.8rem; } }
     .header__right--phone {
       display: flex;
       margin-right: 3rem;
