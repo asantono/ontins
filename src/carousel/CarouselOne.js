@@ -5,6 +5,7 @@ import car from "../img/car.jpg";
 import trucking from "../img/trucking.png";
 import health from "../img/health.jpg";
 import travel from "../img/travel.jpg";
+import home from "../img/home.jpg";
 // import coverthree from '../../img/salemade.jpg';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import CarouselOverlay from "./CarouselOverlay";
@@ -29,6 +30,15 @@ const CarouselOne = () => {
         <div>
           <CarouselOverlay title="Auto Insurance" />
           <img className="carousel__image" key="img" src={car} alt="carousel" />
+        </div>
+        <div>
+          <CarouselOverlay title="Home Insurance" />
+          <img
+            className="carousel__image"
+            key="img"
+            src={home}
+            alt="carousel"
+          />
         </div>
         <div>
           <CarouselOverlay title="Business Insurance" />

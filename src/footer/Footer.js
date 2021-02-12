@@ -9,10 +9,10 @@ const Footer = () => {
         <div className="header__left footer__width">
           <Logo />
           <a className="footer__phone" href="tel:905-529-6666">
-            <span className="footer__phone--left">direct:</span> 905-529-6666
+            <span className="footer__phone--left">Direct:</span> 905-529-6666
           </a>
           <a className="footer__phone" href="tel:519-601-6666">
-            <span className="footer__phone--left">cell:</span> 519-601-6666
+            <span className="footer__phone--left">Cell:</span> 519-601-6666
           </a>
         </div>
         <div className="footer__right">

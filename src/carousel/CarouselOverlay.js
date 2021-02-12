@@ -17,12 +17,17 @@ const CarouselOverlay = (props) => {
           </div>
         </div>
         <div className="carousel__right">
-          <input
-            className="carousel__right--button"
-            type="submit"
-            value="Let's Talk Today"
-            onClick={() => goToForm()}
-          />
+          <div>
+            <input
+              className="carousel__right--button"
+              type="submit"
+              value="Let's Talk Today"
+              onClick={() => goToForm()}
+            />
+            <a href="tel:519-601-6666">
+              <div className="carousel__right--phone">519-601-6666</div>
+            </a>
+          </div>
         </div>
       </div>
     </div>

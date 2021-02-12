@@ -43,11 +43,12 @@ const Header = () => {
             className="header__right--email"
             href="mailto:paulbrar69@ontins.com?cc=paulbrar69@gmail.com"
           >
+            <div></div>
             <div className="header__right--email--icon">
               <AiOutlineMail />
             </div>
             <div className="header__right--email--address">
-              paulBrar@ontins.com
+              paulbrar@ontins.com
             </div>
           </a>
         </div>

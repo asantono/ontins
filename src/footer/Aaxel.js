@@ -10,8 +10,8 @@ const Aaxel = () => {
       <div className="aaxel__addline">1332 Khalsa Drive</div>
       <div className="aaxel__addline">Unit 11</div>
       <div className="aaxel__addline">Mississauga, ON L5s 0A2</div>
-      <div className="aaxel__addline">Office: 905-565-6644</div>
-      <div className="aaxel__addline">Fax: 905-698-1235</div>
+      {/* <div className="aaxel__addline">Office: 905-565-6644</div>
+      <div className="aaxel__addline">Fax: 905-698-1235</div> */}
       <img className="aaxel__logo" src={logo2} alt="aaxel logo" />
     </div>
   );
