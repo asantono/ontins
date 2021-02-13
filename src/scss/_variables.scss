@@ -21,6 +21,7 @@ $screen-tn-max: 450px;
 $screen-sm-max: 596px;
 $screen-md-max: 768px;
 $screen-lg-max: 992px;
+$screen-xl-max: 1060px;
 
 // Mixins
 
@@ -44,6 +45,12 @@ $screen-lg-max: 992px;
 
 @mixin lg {
   @media (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: #{$screen-xl-max}) {
     @content;
   }
 }
