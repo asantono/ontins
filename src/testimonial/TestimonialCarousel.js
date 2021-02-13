@@ -15,28 +15,46 @@ const TestimonialCarousel = () => {
       interval={5000}
     >
       <div className="testimonial__body">
-        "My family has the protection I have been wanting to provide them.
+        "Excellent service, professional and prompt. I received great health
+        insurance rates.
         <br />
         <br />
-        Finding the right policy was easy with Paul. I knew what I wanted, and
-        Paul knew how to get me the coverage that fit my needs.
-        <br />
-        <br />
-        Ontins will be my first call for all of my insurance needs."
-        <div className="testimonial__author">Tony B</div>
+        Keep up the great work Paul!"
+        <div className="testimonial__author">Jagtar M.</div>
       </div>
 
       <div className="testimonial__body">
-        "Ontins was able to get my the insurance and certificates I needed for
-        my business.
+        "Gets you some amazing home and auto rates, he is an experienced person.
         <br />
         <br />
-        Paul worked to get me the right coverage for my specialty business.
-        Having professional advice was invaluable when creating my policy.
+        Highly recommend, wish I would have known him sooner."
+        <div className="testimonial__author">Kahlid M.</div>
+      </div>
+
+      <div className="testimonial__body">
+        "Very professional and replies back quickly. He worked to get the best
+        home insurance rates for me.
         <br />
-        <br />I am glad to have worked with Ontins, and I would recommend Ontins
-        to my friends!"
-        <div className="testimonial__author">-Samantha K</div>
+        <br />I wish him all the best."
+        <div className="testimonial__author">Maya G.</div>
+      </div>
+
+      <div className="testimonial__body">
+        "Offers friendly, quick services.
+        <br />
+        <br />
+        He is very helpful in answering all questions and got me the best auto
+        and home insurance rates."
+        <div className="testimonial__author">Harshan K.</div>
+      </div>
+
+      <div className="testimonial__body">
+        "Had a great experience working with Paul!
+        <br />
+        <br />
+        He provides very good insurance rates and is definitely someone you can
+        trust."
+        <div className="testimonial__author">Saini Y.</div>
       </div>
     </Carousel>
   );
